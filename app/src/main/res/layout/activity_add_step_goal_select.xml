@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:padding="10dp"
+    tools:context="ng.startup.journeyapp.fragments.today.AddStepGoalSelect">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/infini_gras"
+        android:text="Add Step"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView30"
+        android:fontFamily="@font/lato_regular"
+        android:padding="10dp"
+        android:text="Goal:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerGoals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/cardView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:background="@drawable/button_curved_edges_white_two"
+        android:padding="5dp"
+        android:popupBackground="@drawable/button_curved_edges_white_two" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView12"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="What step are you taking?"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editTextStepTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView13"
+                android:layout_alignStart="@+id/textView13"
+                android:layout_below="@+id/textView13"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:textAlignment="textStart" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/editTextStepTitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:padding="10dp">
+
+                <Button
+                    android:id="@+id/cancelStepButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/dark_background_curved_edges"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Cancel"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/addStepButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toEndOf="@+id/cancelStepButton"
+                    android:layout_toRightOf="@+id/cancelStepButton"
+                    android:background="@drawable/dark_background_curved_edges"
+                    android:fontFamily="@font/lato_regular"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="Add Step"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>

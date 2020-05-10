@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lyt_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/card_background_dark"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:height="@dimen/list_item_height"
+        android:background="@drawable/light_background_curved_edges">
+
+        <RelativeLayout
+            android:id="@+id/sideColor"
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/content"
+            android:layout_alignTop="@+id/content"
+            android:background="@drawable/card_background_dark">
+
+            <RelativeLayout
+                android:id="@+id/sideColor2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/imagePending"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                app:srcCompat="@drawable/background_color_circle_selector" />
+
+            <ImageView
+                android:id="@+id/imageDone"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/background_color_circle_selector"
+                android:padding="3dp"
+                app:srcCompat="@drawable/checkmark_round" />
+
+            <TextView
+                android:id="@+id/stepTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/imageDone"
+                android:layout_toRightOf="@+id/imageDone"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/list_item_padding_sides"
+                android:text="Step Title"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/goalTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/stepTitle"
+                android:layout_alignStart="@+id/stepTitle"
+                android:layout_below="@+id/stepTitle"
+                android:fontFamily="@font/lato_regular"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="@dimen/list_item_padding_sides"
+                android:text="Goal Title"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:height="@dimen/list_item_height"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/list_item_padding_sides"
+        android:paddingRight="@dimen/list_item_padding_sides"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/txt_delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:clickable="false"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center_vertical"
+            android:hapticFeedbackEnabled="true"
+            android:text="Mark as Done"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txt_undo"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:fontFamily="@font/lato_regular"
+            android:gravity="center|end"
+            android:text="@string/undo"
+            android:textColor="@color/yellow" />
+
+    </LinearLayout>
+
+</FrameLayout>

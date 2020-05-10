@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/goal_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/light_grey"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:id="@+id/goalBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/goalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkBox2"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_toEndOf="@+id/checkBox2"
+            android:layout_toRightOf="@+id/checkBox2"
+            android:fontFamily="@font/lato_regular"
+            android:text="TextView"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="24sp" />
+
+        <TableRow
+            android:id="@+id/row4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/goalTitle"
+            android:layout_below="@+id/goalTitle"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/card_background_dark"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp">
+
+            <TextView
+                android:id="@+id/noOfDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato_regular"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/noOfDays"
+                android:layout_marginLeft="5dp"
+                android:layout_toEndOf="@+id/noOfDays"
+                android:layout_toRightOf="@+id/noOfDays"
+                android:fontFamily="@font/lato_regular"
+                android:text="Days Left"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/noOfSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView15"
+            android:layout_alignEnd="@+id/textView15"
+            android:layout_alignRight="@+id/textView15"
+            android:fontFamily="@font/lato_regular"
+            android:text="0"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/row4"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/lato_regular"
+            android:text="Steps"
+            android:textColor="@color/cardview_dark_background" />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

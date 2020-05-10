@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#054E5A</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#054e5a</color>
+    <color name="light_grey">#c3e2da</color>
+    <color name="white">#ffffff</color>
+    <color name="white_trans">#99FFFFFF</color>
+    <color name="gray_background">#757575</color>
+    <color name="yellow">#ffbb33</color>
+
+    <color name = "selector_purple">#96800080</color>
+    <color name = "selector_red">#96ff0000</color>
+    <color name = "selector_blue">#960000ff</color>
+    <color name = "selector_green">#96008000</color>
+    <color name = "selector_gray">#96808080</color>
+    <color name = "selector_yellow">#96ffff00</color>
+</resources>

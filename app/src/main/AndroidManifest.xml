@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ng.startup.journeyapp">
+
+    <!-- permission required to automatically restart a repeating alarm if the user reboots the device -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_man"
+        android:label="Journey"
+        android:roundIcon="@drawable/logo_man"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".onboarding.LandingScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authentication.LoginScreen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomeScreen"
+            android:launchMode="singleTop"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".fragments.today.AddStepGoalSelect"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity
+            android:name=".fragments.goals.AddGoal"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".fragments.goals.AddStep" />
+        <activity
+            android:name=".fragments.today.StepIndividual"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.goals.GoalIndividual"
+            android:label=""
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".fragments.goals.GoalStepsIndividual"
+            android:parentActivityName=".fragments.goals.GoalIndividual"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".reflect.ReflectActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".prompt.PromptActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+
+        <!-- Register the Alarm Receiver for Prompt -->
+        <receiver
+            android:name=".alarm_manager.AlarmReceiverPrompt"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Register the Alarm Receiver for Reflect -->
+        <receiver
+            android:name=".alarm_manager.AlarmReceiverReflect"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".reflect.ReflectStepIndividual"
+            android:parentActivityName=".reflect.ReflectActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

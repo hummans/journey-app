@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/infini_gras"
+                android:text="Reflect"
+                android:textColor="@color/cardview_light_background"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top_bar"
+            android:layout_marginTop="20dp"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/card_stack_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/button_container"
+                android:layout_centerVertical="false"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:paddingBottom="120dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:paddingTop="40dp">
+
+                <com.yuyakaido.android.cardstackview.CardStackView
+                    android:id="@+id/card_stack_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    tools:listitem="@layout/reflect_item">
+
+                </com.yuyakaido.android.cardstackview.CardStackView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <ImageView
+                    android:id="@+id/swipe_left"
+                    android:layout_width="60dp"
+                    android:layout_height="120dp"
+                    android:layout_centerHorizontal="false"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/swipe_left" />
+
+                <ImageView
+                    android:id="@+id/swipe_right"
+                    android:layout_width="60dp"
+                    android:layout_height="120dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/swipe_right" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/button_container"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:clipChildren="false"
+                android:clipToPadding="false"
+                android:orientation="horizontal"
+                android:paddingBottom="12dp">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:clipToPadding="false"
+                    android:paddingEnd="16dp"
+                    android:paddingRight="16dp">
+
+                    <Button
+                        android:id="@+id/finishButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/dark_background_curved_edges"
+                        android:fontFamily="@font/lato_regular"
+                        android:paddingBottom="15dp"
+                        android:paddingLeft="70dp"
+                        android:paddingRight="70dp"
+                        android:paddingTop="15dp"
+                        android:text="Finish"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

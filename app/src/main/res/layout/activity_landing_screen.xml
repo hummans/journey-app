@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/letsGoButton"
+            android:layout_marginBottom="40dp">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/indicator"
+                android:layout_alignParentTop="true" />
+
+            <me.relex.circleindicator.CircleIndicator
+                android:id="@+id/indicator"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                app:ci_drawable="@drawable/dark_background_curved_edges"
+                app:ci_height="7dp"
+                app:ci_width="7dp" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/letsGoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dark_background_curved_edges"
+            android:fontFamily="@font/lato_regular"
+            android:paddingBottom="15dp"
+            android:paddingLeft="70dp"
+            android:paddingRight="70dp"
+            android:paddingTop="15dp"
+            android:text="Let's Go"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+	package
+		ADDED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:11-56
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		ADDED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		ADDED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml:3:1-58
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+uses-sdk
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		ADDED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		ADDED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
+		INJECTED from /Users/mungwaagu/AndroidStudioProjects/JourneyApp/library_cardstack/src/main/AndroidManifest.xml
